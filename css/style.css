@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Monteserrat", sans-serif;
+  margin: 0;
+ 
+}
+
+.main-content {
+  position: relative;
+  max-width: 920px;
+  margin: auto;
+
+  figure img {
+    max-width: 100%;
+  } 
+}
+
+
+
+
+
+
+/*---------------------
+  grid header, main, footer
+-----------------------*/
+
+
+.flex-container {
+display: flex;
+flex-direction: column;
+}
+
+:first-child {
+  margin-right: auto;
+}
+
+.global-header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  
+
+}
+
+#main-logo {
+  display: flex;
+  width: 70px;
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
+
+.flex-header {
+  position: relative;
+  display: flex;
+  margin-bottom: 2rem;
+
+  form {
+    display: flex;
+    gap: 1rem;
+    top: 5px;
+    right: 0;
+    padding: 1rem;
+    
+
+    .text-box {
+      position:absolute;
+      display: flex;
+      border-radius: 10px;
+      display: none;
+      
+      
+      
+    }
+
+    .box-icon {
+      display: flex;
+      gap: 0.5rem;  
+      border-radius: 10px;
+      display: none;
+  
+    }
+  }
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: url(/img/sea-4768869_1920.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 70px;
+  }
+
+  }
+
+
+.flex-icons__mobile {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style: none;
+  right: 0;
+  padding: 1rem;
+
+}
+
+.flex-desktop {
+  display: flex;
+  list-style: none;
+  right: 0;
+  padding: 1rem;
+  top: 1rem;
+  align-items: center;
+  display: none;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------
+  Main
+-----------------------*/
+.main-banner {
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: auto;
+ background-color: #fff;
+ border-radius: 10px;
+
+ .banner {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+ }
+
+}
+
+.main-scroll {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+   
+}
+
+
+
+select {
+  display: none;
+}
+ 
+.banner-photo {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/holiday-2733322_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  align-items: end;
+
+  article {
+    margin: 1rem 1rem 0.8rem;
+    padding: 1rem;
+    background-color: aqua;
+    border-radius: 0px 20px;
+    width: 50%;
+  }
+
+  a {
+    margin: 0 1rem 1.2rem;
+    padding: 0.5rem;
+    background-color: rgb(247, 207, 25);
+    border-radius: 5px;
+    float: right;
+  }
+}
+
+.offer-holiday {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+  gap: 1rem;
+
+}
+
+  #sign-inn {
+    
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    padding: 1rem;
+    
+
+  }
+
+  #coupon {
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    padding: 1rem;
+
+  }
+
+  #save-money {
+
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    padding: 1rem;
+
+  }
+  
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------
+  footer
+-----------------------*/
+footer {
+  background-color:black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    border-width: 0.5px;
+    
+  
+
+}
+
+footer .country {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: auto;
+  
+  
+  
+ 
+}
+
+footer figure {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  color: white;
+  margin: 5px;
+  justify-content: center;
+
+  img{
+    width: 35px;
+  }
+  
+}
+
+
+.div-container {
+  flex-direction: row;
+  display: flex;
+  justify-content:space-between
+
+  
+
+  .payment-method {
+    text-transform: capitalize;
+    font-weight: unset;
+    font-size: 1rem;
+    
+  }  
+}
+
+h3 {
+  color: aliceblue;
+  font-size: 1rem;
+}
+
+.icon-payment {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  color: #fff;
+  gap: 1rem;
+}
+
+.news-offer {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  form fieldset {
+    display: flex;
+    padding: 1rem;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+}
+
+
+
+
+
+#send {
+  background-color: yellow;
+  border-radius: 4px; 
+}
+
+
+
+
+
+  
+
+.Customer-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  
+  
+.info-footer  {
+display: flex;
+flex-direction: column;
+list-style: none;
+text-decoration: none;
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+       
+  }
+}
+  
+
+.sosial-media {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+
+  .sosial-media-icon  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+    text-decoration: none;
+    list-style: none;
+
+    a {
+      color: #fff;
+      font-size: 1rem;
+      text-decoration: none;
+    }
+    
+
+  }
+
+   
+  }
+
+
+  
+
+  
+
+
+
+
+
+  footer .country {
+    max-width: 500px;
+
+  }
+
+
+@media only screen and  (max-width: 800px){
+  .div-container {
+    flex-wrap: wrap;
+  }
+  
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  .flex-icons__mobile {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 750px) {
+  .body {
+    display: none;
+  }
+
+}

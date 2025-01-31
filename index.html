@@ -14,95 +14,106 @@
         <title>Eksamen | Forside</title>
   </head>
   <body>
-      <a href="#main-content" class="skip-to-content" aria-label="skip to content"> skip to content</a>
-      <div>
-           <header>
-                <img src="img/fav.png" alt="Logo for Nettside">
-                     <nav>
-                         <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                         <li><a href="#">Oprett en konto</a></li>
-                         <li><a href="#"><i class="fa-regular fa-circle-user"></i>Min Konto</a></li>
-                     </nav>
-                     <ul>
+     <div class="flex-container">
+      <a href="main-content" class="skip-to-content" aria-label="skip to content"></a>
+      
+           <header class="global-header">
+                <img id="main-logo" src="img/fav.png" alt="Logo">
+                <nav class="flex-header"> 
+                    <form>
+                         <button class="text-box">Oprett en konto</button>
+                         <button class="box-icon"><i class="fa-regular fa-circle-user"></i> Min side</button>  
+                    </form>
+                    <ul class="flex-icons__mobile">
+                         <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                         <li><i class="fa-regular fa-circle-user"></i></li>
+                         <li><i class="fa-solid fa-bars"></i></li>
+                    </ul>
+                     <ul class="flex-desktop">
                          <li><a href="#">Tips og inspirasjon</a></li>
                          <li><a href="hotell.html">Hotell</a></li>
                          <li><a href="https://www.norwegian.no/">Fly</a></li>
                          <li><a href="#">Kontakt</a></li>
                      </ul>
-               <img src="img/sea-4768869_1920.jpg" alt="Green sea">   
+               </nav>
            </header>
-           <main>
-                 <section>
-                       <button><i class="fa-solid fa-suitcase"></i>Fly + Hotell</button>
-                       <button><i class="fa-solid fa-plane"></i>Fly</button>
-                       <button><i class="fa-solid fa-city"></i>Storby</button>
-                       <button><i class="fa-solid fa-person-skiing"></i>Ski</button>
-                       <button><i class="fa-solid fa-map-location-dot"></i>Kombinasjonsreiser</button>
-                 </section>
-                 <section>
-                      <form>
-                         <label></label>
-                         <select>
-                              <option>Oslo Lufthavn</option>
-                              <option value="Torp Sandefjord Lufthavn">Torp Sandefjord Lufthavn</option>
-                              <option value="Bergen Lufthavn">Bergen lufthavn</option>
-                              <option value="Alta Lufthavn">Alta Lufthavn</option>
-                         </select>
-                         <label></label>
-                         <select>
-                              <option>Albania</option>
-                              <option value="Danmark">Denmark</option>
-                              <option value="Finland">Finland</option>
-                              <option value="Hellas">Greece</option>
-                         </select>
-                         <label></label>
-                         <select>
-                              <option>Mindre enn 1 uke</option>
-                              <option value="1 uke">1 uke</option>
-                              <option value="2 uker">2 uker</option>
-                              <option value="Mer enn 2 uker">Mer enn 2 uker</option>
-                         </select>
-                      </form>
-                      <form>
-                         <label></label>
-                         <input type="date" name="date" id="date">
-                      </form>
-                      <form>
-                         <label></label>
-                         <input type="number" name="reisende" id="reisende" placeholder="2">
-                      </form>
-                 </section>
-                 <section>
-                    <img src="img/holiday-2733322_1280.jpg" alt="En dame i et svømmebaseng, som koser seg i sola">
-                     
-                         <article>
+           <main class="main-content"> 
+               <header class="main-banner">
+                    <section class="banner">
+                         <form>
+                              <nav class="main-scroll">
+                                   <a href="#"><i class="fa-solid fa-suitcase"></i> Fly + Hotell</a>
+                                   <a href="#"><i class="fa-solid fa-plane"></i> Fly</a>
+                                   <a href="#"><i class="fa-solid fa-city"></i> Storby</a>
+                                   <a href="#"><i class="fa-solid fa-person-skiing"></i> Ski</a>
+                                   <a href="#"><i class="fa-solid fa-map-location-dot"></i> Kombinasjonsreiser</a>
+                              </nav>
+                         </form>
+                    </section>
+                    <section>
+                              <fieldset>
+                                   <legend>Fra</legend>
+                                   <label for="fra">Fra</label>
+                                   <select id="fra" name="fra" itemprop="fra">
+                                        <option>Oslo Lufthavn</option>
+                                        <option value="Torp Sandefjord Lufthavn">Torp Sandefjord Lufthavn</option>
+                                        <option value="Bergen Lufthavn">Bergen lufthavn</option>
+                                        <option value="Alta Lufthavn">Alta Lufthavn</option>
+                                   </select>
+                              </fieldset>
+                              <fieldset>
+                                   <legend>Til</legend>
+                              <label></label>
+                              <select>
+                                   <option>Albania</option>
+                                   <option value="Danmark">Denmark</option>
+                                   <option value="Finland">Finland</option>
+                                   <option value="Hellas">Greece</option>
+                              </select>
+                              </fieldset>
+                              <label></label>
+                              <select>
+                                   <option>Mindre enn 1 uke</option>
+                                   <option value="1 uke">1 uke</option>
+                                   <option value="2 uker">2 uker</option>
+                                   <option value="Mer enn 2 uker">Mer enn 2 uker</option>
+                              </select>
+                           </form>
+                           <form>
+                              <label></label>
+                              <input type="date" name="date" id="date">
+                           </form>
+                           <form>
+                              <label></label>
+                              <input type="number" name="reisende" id="reisende" placeholder="2">
+                           </form>
+                      </section>
+                </header>
+                 <section class="banner-photo">
+                    <article>
                               <h3>Bestill sommerens beste uke</h3>
                               <p>Fly + Hotell, 7 dager</p>
                               <h2>Fra 3 298,-</h2>
-                              <button><a href="hotell.html"></a>Bestill i dag</button>
-                         </article>    
+                         </article>   
+                         <a href="hotell.html">Bestill i dag</a>       
                  </section>
-                 <section>
-                    <article>
-                         <button>
+                 <section class="offer-holiday">
+                    <article id="sign-inn">
                               <h4>Få ekslusive tilbud</h4>
                               <a href="#">Logg inn/opprett konto og få rabattkoder<i class="fa-solid fa-angles-right"></i></a>
-                         </button>
+                         
                     </article>
-                    <article>
-                         <button>
+                    <article id="coupon">  
                               <h4>Billige resteplasser</h4>
                               <a href="#">Opptil 50% rabatt<i class="fa-solid fa-angles-right"></i></a>
-                         </button>
+                    
                     </article>
-                    <article>
-                         <button>
+                    <article id="save-money">
                               <h4>Mars - spar opptil 5000,-</h4>
                               <a href="#">Sikre deg et ferie kupp<i class="fa-solid fa-angles-right"></i></a>
-                         </button>
                     </article>
                  </section>
-                 <section>
+                 <section id="inspiration-tips">
                       <article>
                          <h2>Tips & inspirasjon</h2>
                            <figure>
@@ -215,18 +226,15 @@
                </section>
            </main>
            <footer>
-               <section>
-               <article>
+               <section class="country">
                     <figure>
-                         <img src="flags/sweden.png" alt="">
-                         <figcaption>  
-                              <p>Sverige</p>
+                         <img src="flags/sweden.png" alt="Sverige">
+                         <figcaption>
+                              Sverige
                          </figcaption>
                     </figure>
-               
-               
                     <figure>
-                         <img src="flags/denmark.png" alt="">
+                         <img src="flags/denmark.png" alt="Danmark">
                          <figcaption>  
                               <p>Danmark</p>
                          </figcaption>
@@ -249,33 +257,34 @@
                               <p>Nederland</p>
                          </figcaption>
                     </figure>
-               </article>
                </section>
-                <section>
+             <div class="div-container">
+                <section class="payment-method">
                      <h3>Betalingsmetoder</h3>
-                     <ul>
-                         <li><a href="https://www.visa.no/"><i class="fa-brands fa-cc-visa"></i></a></li>
-                         <li><a href="https://www.mastercard.no/"><i class="fa-brands fa-cc-mastercard"></i></a></li>
-                         <li><a href="https://www.paypal.com/"><i class="fa-brands fa-cc-paypal"></i></a></li>
-                         <li><a href="https://www.apple.com/apple-pay/"><i class="fa-brands fa-apple-pay"></i></a></li>
-                         <li><a href="https://pay.amazon.com/"><i class="fa-brands fa-amazon-pay"></i></a></li>
+                     <ul class="icon-payment">
+                         <li><i class="fa-brands fa-cc-visa" title="visa"></i></a></li>
+                         <li><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                         <li><i class="fa-brands fa-cc-paypal"></i></a></li>
+                         <li><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                         <li><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
                      </ul>   
                 </section>
-                <section>
-                      <h3>Nyheter og tilbud</h3>
+                <section class="news-offer">
+                      <h3>Nyheter & tilbud</h3>
                       <form>
                            <fieldset>
                                  <legend>Meld deg på nyhetsbrev her</legend>
-                                 <input type="email">
-                                 <input type="submit" value="Send" placeholder="ola@example.com">
+                                 <label for="epost"></label>
+                                 <input type="email" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$]" required placeholder="ola@example.com">
+                                 <input  type="submit" value="Send" id="send">
                            </fieldset>
                       </form>
                       <a href="#">Kjøp reisegavekort</a>
                 </section>
-                <section>
+                <section class="Customer-service">
                      <h3>Kundeservice</h3>
                      <nav>
-                           <ul>
+                           <ul class="info-footer">
                                <li><a href="#">Spørsmål og svar</a></li>
                                <li><a href="#">Chat</a></li>
                                <li><a href="#">Kontakt</a></li>
@@ -283,9 +292,9 @@
                            </ul>
                      </nav>
                 </section>
-                <section>
+                <section class="sosial-media">
                     <h3>sosiale medier</h3>
-                    <ul>
+                    <ul class="sosial-media-icon">
                          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
                          <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                          <li><a href="https://pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
@@ -293,12 +302,9 @@
                          <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
                     </ul>
                 </section>
+               </article>
+             </div>
            </footer>
-           <span>
-               <a href="#" class="Tilbake til toppen">til toppen
-               <i class="fa-solid fa-arrow-up"></i>
-               </a>
-           </span>
       </div>
   </body>
 </html>

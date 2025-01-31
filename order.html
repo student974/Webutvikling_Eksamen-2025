@@ -16,22 +16,26 @@
   <body>
       <a href="#main-content" class="skip-to-content" aria-label="skip to content"> skip to content</a>
       <div>
-           <header>
-                <img src="img/fav.png" alt="Logo for Nettside">
-                <nav>
-                     <nav>
-                         <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                         <li><a href="#">Oprett en konto</a></li>
-                         <li><a href="#"><i class="fa-regular fa-circle-user"></i>Min Konto</a></li>
-                     </nav>
-                     <ul>
-                         <li><a href="#">Tips og inspirasjon</a></li>
-                         <li><a href="hotell.html">Hotell</a></li>
-                         <li><a href="https://www.norwegian.no/" target="_blank">Fly</a></li>
-                         <li><a href="#">Kontakt</a></li>
-                     </ul>
-                </nav>
-           </header>
+          <header class="global-header">
+               <img id="main-logo" src="img/fav.png" alt="Logo">
+               <nav class="flex-header"> 
+                   <form>
+                        <button class="text-box">Oprett en konto</button>
+                        <button class="box-icon"><i class="fa-regular fa-circle-user"></i> Min side</button>  
+                   </form>
+                   <ul class="flex-icons__mobile">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li><i class="fa-regular fa-circle-user"></i></li>
+                        <li><i class="fa-solid fa-bars"></i></li>
+                   </ul>
+                    <ul class="flex-desktop">
+                        <li><a href="#">Tips og inspirasjon</a></li>
+                        <li><a href="hotell.html">Hotell</a></li>
+                        <li><a href="https://www.norwegian.no/">Fly</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+              </nav>
+          </header>
            <main>
                <header>
                     <nav>
@@ -161,68 +165,65 @@
                </section>
            </main>
            <footer>
-               <section>
-                    <article>
-                         <figure>
-                              <img src="flags/sweden.png" alt="">
-                              <figcaption>  
-                                   <p>Sverige</p>
-                              </figcaption>
-                         </figure>
-                    
-                    
-                         <figure>
-                              <img src="flags/denmark.png" alt="">
-                              <figcaption>  
-                                   <p>Danmark</p>
-                              </figcaption>
-                         </figure>
-                         <figure>
-                              <img src="flags/norway.png" alt="Norge">
-                              <figcaption>  
-                                   <p>Norge</p>
-                              </figcaption>
-                         </figure>
-                         <figure>
-                              <img src="flags/material.png" alt="Soumi">
-                              <figcaption>  
-                                   <p>Suomi</p>
-                              </figcaption>
-                         </figure>
-                         <figure>
-                              <img src="flags/netherlands.png" alt="Nederland">
-                              <figcaption>  
-                                   <p>Nederland</p>
-                              </figcaption>
-                         </figure>
-                    </article>
-                    </section>
-
-                <section>
+               <section class="country">
+                    <figure>
+                         <img src="flags/sweden.png" alt="Sverige">
+                         <figcaption>
+                              Sverige
+                         </figcaption>
+                    </figure>
+                    <figure>
+                         <img src="flags/denmark.png" alt="Danmark">
+                         <figcaption>  
+                              <p>Danmark</p>
+                         </figcaption>
+                    </figure>
+                    <figure>
+                         <img src="flags/norway.png" alt="Norge">
+                         <figcaption>  
+                              <p>Norge</p>
+                         </figcaption>
+                    </figure>
+                    <figure>
+                         <img src="flags/material.png" alt="Soumi">
+                         <figcaption>  
+                              <p>Suomi</p>
+                         </figcaption>
+                    </figure>
+                    <figure>
+                         <img src="flags/netherlands.png" alt="Nederland">
+                         <figcaption>  
+                              <p>Nederland</p>
+                         </figcaption>
+                    </figure>
+               </section>
+             <div class="div-container">
+                <section class="payment-method">
                      <h3>Betalingsmetoder</h3>
-                     <ul>
-                         <li><a href="https://www.visa.no/"><i class="fa-brands fa-cc-visa"></i></a></li>
-                         <li><a href="https://www.mastercard.no/"><i class="fa-brands fa-cc-mastercard"></i></a></li>
-                         <li><a href="https://www.paypal.com/"><i class="fa-brands fa-cc-paypal"></i></a></li>
-                         <li><a href="https://www.apple.com/apple-pay/"><i class="fa-brands fa-apple-pay"></i></a></li>
-                         <li><a href="https://pay.amazon.com/"><i class="fa-brands fa-amazon-pay"></i></a></li>
+                     <ul class="icon-payment">
+                         <li><i class="fa-brands fa-cc-visa" title="visa"></i></a></li>
+                         <li><i class="fa-brands fa-cc-mastercard"></i></a></li>
+                         <li><i class="fa-brands fa-cc-paypal"></i></a></li>
+                         <li><i class="fa-brands fa-cc-apple-pay"></i></a></li>
+                         <li><i class="fa-brands fa-cc-amazon-pay"></i></a></li>
                      </ul>   
                 </section>
-                <section>
-                      <h3>Nyheter og tilbud</h3>
+                <section class="news-offer">
+                      <h3>Nyheter & tilbud</h3>
                       <form>
                            <fieldset>
                                  <legend>Meld deg på nyhetsbrev her</legend>
-                                 <input type="email">
-                                 <input type="submit" value="Send" placeholder="ola@example.com">
+                                 <label for="epost"></label>
+                                 <input type="email" id="epost" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$]" required placeholder="ola@example.com">
+                                 <input  type="submit" value="Send" id="send">
                            </fieldset>
                       </form>
                       <a href="#">Kjøp reisegavekort</a>
                 </section>
-                <section>
+                <section class="Customer-service">
                      <h3>Kundeservice</h3>
                      <nav>
-                           <ul>
+                           <ul class="info-footer">
                                <li><a href="#">Spørsmål og svar</a></li>
                                <li><a href="#">Chat</a></li>
                                <li><a href="#">Kontakt</a></li>
@@ -230,9 +231,9 @@
                            </ul>
                      </nav>
                 </section>
-                <section>
+                <section class="sosial-media">
                     <h3>sosiale medier</h3>
-                    <ul>
+                    <ul class="sosial-media-icon">
                          <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
                          <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
                          <li><a href="https://pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
@@ -240,6 +241,8 @@
                          <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
                     </ul>
                 </section>
+               </article>
+             </div>
            </footer>
            <span>
                <a href="#" class="Tilbake til toppen">til toppen
